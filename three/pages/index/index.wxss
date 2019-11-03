@@ -1,0 +1,121 @@
+@import '/public/css/icon.wxss';
+.frist {
+  display:flex;
+  background: #fff;
+  justify-content: space-between ;
+  padding:5px 20px;
+}
+.icon {
+  width: 182rpx;
+  height:52rpx;
+}
+.nav {
+ width:750rpx;
+ height:300rpx;
+}
+.icon-list {
+  background: #fff;
+  display:flex;
+  justify-content: space-between ;
+}
+.icon-list text {
+  padding-top: 3px;
+  font-size: 12px;
+}
+.icon-list view {
+  display:flex;
+  flex-direction:column;
+  padding: 12px 15px;
+}
+.img {
+   width: 74rpx;
+   height: 74rpx;
+}
+.list {
+  margin-top: 20rpx ;
+  background: #fff;
+  padding-bottom: 10px;
+}
+.list-jy {
+  display:flex;
+  justify-content: space-between ;
+}
+.list-jy text {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.list-jy .text2 {
+  font-size: 14px;
+}
+.list-item
+ {
+  display:flex;
+  margin-top: 10rpx;
+}
+.list-item-left image ,
+.tj-left image,
+.tj-right image {
+ width: 370rpx;
+ height: 186rpx;
+}
+.list-item-right  {
+  padding-left: 10px;
+  font-size: 12px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-item-right view:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+.list-item-right .desc {
+ color: #999999;
+}
+.list-item-right .number,
+.tj .number {
+  color: #666666;
+}
+
+.list-item-right .money,
+.tj .money {
+  color: #FF544c;
+}
+.list-tj {
+  margin-top: 20rpx ;
+  background: #fff;
+  
+}
+.list-tj-bt {
+  display:flex;
+  justify-content: space-between ;
+}
+.list-tj-bt text {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.list-tj-bt .text2 {
+  font-size: 14px;
+}
+.tj {
+  display:flex;
+  margin-top: 10rpx;
+  
+}
+.tj-left,
+.tj-right {
+  padding-right: 5px;
+  font-size: 12px;
+  display:flex;
+  flex-direction: column;
+}
+.tj .tj-left view:last-child,
+.tj .tj-right view:last-child {
+  display:flex;
+  justify-content: space-between ;
+}
+
+
+
+
+

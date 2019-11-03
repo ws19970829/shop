@@ -1,0 +1,39 @@
+<template name="jiuye">
+    <view class="list-item">
+        <view class="list-item-left">
+            <image src="{{ item.img }}" />
+        </view>
+        <view class="list-item-right">
+            <view class="title">{{ item.title}}</view>
+            <view class="desc">{{ item.desc }}</view>
+            <view class="lasthaha">
+                <view class="number">{{ item.number }}</view>
+                <view class="money">{{ item.money }}</view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="tj">
+    <view class="tj">
+        <view class="tj-left">
+            <view>
+                <image src="{{ item.img1 }}" />
+            </view>
+            <view class="title">{{ item.title1 }}</view>
+            <view>
+                <view class="number">{{ item.number1 }}</view>
+                <view class="money">{{ item.money1 }}</view>
+            </view>
+        </view>
+        <view class="tj-right">
+            <view>
+                <image src="{{ item.img2 }}" />
+            </view>
+            <view class="title">{{ item.title2 }}</view>
+            <view class="last">
+                <view class="number">{{ item.number2 }}</view>
+                <view class="money">{{ item.money2 }}</view>
+            </view>
+        </view>
+    </view>
+</template>
