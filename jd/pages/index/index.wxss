@@ -1,0 +1,92 @@
+@import "/public/template/icon.wxss";
+.nav-1 {
+ height: 90rpx;
+ /* border-bottom: 1px soild #666666; */
+ }
+.nav {
+    display: flex;
+    justify-content: center;
+    background: #FCEDEB;
+    height: 42rpx;
+    width: 700rpx;
+    margin: auto;
+    padding :7px 0px;
+}
+.nav text {
+    font-size: 12px;
+    color: #666666;
+}
+
+.icon {
+    width: 90rpx;
+    height: 28rpx;
+}
+.sj {
+    /* border-top: 1px soild red; */
+    height: 260rpx;
+    display: flex;
+    padding: 5px 0px 5px 10px;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #666666;
+}
+.sj-left .img1 {
+   width: 240rpx;   
+   height: 240rpx;   
+}
+.sj-right .img2 {
+    width: 68rpx;
+    height: 28rpx;
+}
+.sj-right .img3 {
+    width: 48rpx;
+    height: 28rpx;
+}
+.sj-right {
+    display: flex;
+    flex-direction:column;
+    padding: 0px 10px 8px;
+}
+.sj-right view:first-child {
+    color: #333333;
+    margin: 8px 0px 0px;
+    font-size: 14px;
+}
+.sj-right .money {
+    color: #E93B3D;
+    font-size: 18px;
+    padding-top:5px;
+}
+.sj-right .three {
+    padding:5px 0px 2px;
+}
+.sj-right .three text {
+    padding-left:3px;
+    font-size: 12px;
+    color: #999999;
+}
+.sj-right view:last-child {
+    padding-bottom: 14px;
+    color: #999999;
+    font-size: 12px;
+}
+.father {
+    position: relative;
+}
+.sonhide {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.sonshow {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    opacity: 1;
+    transition: all 0.6s;
+}
+.scroll {
+    height: 1000rpx;
+}

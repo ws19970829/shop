@@ -1,0 +1,21 @@
+
+<import src="/public/template/sj.wxml"/>
+<view class="nav-1">
+    <view class="nav">
+        <text>点击筛选</text>
+        <image class="icon" src="https://img11.360buyimg.com/jdphoto/s90x28_jfs/t1/50544/35/13798/15234/5da7cf8cEf7e5ea76/8a9fad8c8aef6121.png" />
+        <text>活动商品</text>
+    </view>
+</view>
+<view class="father">
+<scroll-view scroll-y="{{ true }}"  scroll-top="{{ topnum }}" bindscroll="scroll" scroll-with-animation="{{ true }}" class="scroll">
+<view class="nav-2">
+   <block wx:for="{{items}}" wx:key="items">
+       <template is="sj" data="{{ item }}"></template>
+    </block>
+</view>
+</scroll-view>
+<view  bind:tap="clicktop" class="{{ son }}">
+<view class="iconfont icon-huidaodingbu "></view>
+</view>
+</view>

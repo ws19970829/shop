@@ -1,0 +1,59 @@
+<template name="sj">
+    <view class="sj">
+        <navigator url="/pages/detail/detail" hover-class="none" open-type="navigate">
+            <view class="sj-left">
+                <image class="img1" src="{{ item.img }}" />
+            </view>
+        </navigator>
+        <view class="sj-right">
+            <view>
+                <image class="img2" src="{{ item.img_11}}" />
+                <text>{{ item.title }}</text>
+            </view>
+            <view>
+                <text class="money">{{ item.money }}</text>
+            </view>
+            <view class="three">
+                <image class="img3" src="{{ item.img_zy}}" />
+                <text>{{ item.pj }}</text>
+                <text>{{ item.hpl}}</text>
+            </view>
+            <view>
+                <text>{{ item.dp}}</text>
+            </view>
+        </view>
+    </view>
+</template>
+<!-- 评论 -->
+<template name="pl">
+    <view class="pl">
+        <view class="pl-1">
+            <view>
+                <image class="touxiang" src="{{ item.touxiang}}" />
+            </view>
+            <view>
+                <text class="name">{{ item.name }}</text>
+            </view>
+            <view>
+                <text class="vip">{{ item.vip }}</text>
+            </view>
+            <view></view>
+            <view>
+                <text class="times">{{ item.time }}</text>
+            </view>
+        </view>
+        <view>{{ item.plun }}</view>
+        <view class="photo">
+            <image src="{{ item.photo1}}" />
+            <image src="{{ item.photo1}}" />
+            <image src="{{ item.photo1}}" />
+            <image src="{{ item.photo1}}" />
+            <image src="{{ item.photo1}}" />
+            <image src="{{ item.photo1}}" />
+        </view>
+        <view class="finish">
+            <text>{{ item.src }}</text>
+            <text class="hf">{{ item.hf }}  回复</text>
+        </view>
+    </view>
+</template>

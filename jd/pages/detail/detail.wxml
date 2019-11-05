@@ -1,0 +1,107 @@
+<import src="/public/template/sj.wxml" />
+<swiper class="swiper" indicator-dots="{{ true }}" autoplay="{{ true }}" interval="{{ 3000 }}" circular="{{ true }}">
+    <swiper-item class="" item-id="">
+        <view>
+            <image src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/97578/8/1320/527120/5dbc2e42E61e92c15/71983b07a2e5c2f8.jpg!q80.dpg.webp" />
+        </view>
+    </swiper-item>
+    <swiper-item class="" item-id="">
+        <view>
+            <image src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/93667/17/1463/293247/5dbee215Ea07a0979/6ca60bc8cf3db20c.jpg!q80.dpg.webp" />
+        </view>
+    </swiper-item>
+    <swiper-item class="" item-id="">
+        <view>
+            <image src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/97270/10/1247/254348/5dbc25cfE7b7daaa5/2e164dd08f80e767.jpg!q80.dpg.webp" />
+        </view>
+    </swiper-item>
+    <swiper-item class="" item-id="">
+        <view>
+            <image src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/77868/37/14321/366449/5dbc2a28E9113f7d6/c0ee4e0d7144a3e6.jpg!q80.dpg.webp" />
+        </view>
+    </swiper-item>
+</swiper>
+<view class="nav">
+    <view class="nav-1">
+        <view>
+            <text class="money">{{ detail.money }}</text>
+        </view>
+        <view class="nav-1-2">
+            <view class="nav-1-2-1">
+                <view class="iconfont icon-qian"></view>
+                <text>降价提醒</text>
+            </view>
+            <view class="nav-1-2-2">
+                <view class="iconfont icon-xingxing"></view>
+                <text>收藏</text>
+            </view>
+        </view>
+    </view>
+    <view class="nav-two">
+        <view class="nav-2">
+            <image class="img1" src="{{ detail.img_11 }}" alt="" />
+            <image class="img2" src="{{ detail.img_zy }}" alt="" />
+            <text class="desc">{{ detail.desc }}</text>
+        </view>
+        <view class="nav-3">
+            <text class="fuli">{{ detail.fuli }}</text>
+            <text class="chakan">查看</text>
+        </view>
+    </view>
+</view>
+<!-- 评论 -->
+<scroll-view class="plone">
+    <view class="text-1">
+        <view class="text-one">
+            <text class="text-1-1">评价</text>
+            <text class="text-1-2">好评97%</text>
+            <text class="text-1-3">共 21万+ 条</text>
+            <view class="jiantou">
+                <view class="iconfont icon-youjiantou"></view>
+            </view>
+        </view>
+    </view>
+    <scroll-view class="scroll" scroll-y="{{true}}" scroll-top="{{ topnum }}" scroll-with-animation="{{true}}" bindscroll="scroll">
+        <block wx:for="{{ pl }}" wx:key="pl">
+            <template is="pl" data="{{ item }}"></template>
+        </block>
+        <view class="pl-put">
+            <view >
+                <form bindsubmit="dopost">
+                    <view class="pl-put-pl">
+                        <view>
+                            
+                            <input type="text" placeholder="输入你要评论的内容"  name="plun" />
+                        </view>
+                        <view class="pl-put-2">
+                            <button form-type="submit" type="primary">添加评论</button>
+                        </view>
+                    </view>
+                </form>
+            </view>
+            <view class="share">
+                <image src="https://wx.1314000.cn/share.png" class="share-1" />
+                <button open-type="share" type="primary" class="share-2">享</button>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="{{ son }}" bind:tap="clicktop">
+        <view class="iconfont icon-huidaodingbu"></view>
+    </view>
+</scroll-view>
+<view class="finish">
+    <view class="finish-1">
+        <view class="iconfont icon-lianxikefu"></view>
+        <text>联系客服</text>
+    </view>
+    <view class="finish-2">
+        <view class="iconfont icon-dianpu"></view>
+        <text>进店</text>
+    </view>
+    <view class="finish-3">
+        <view class="iconfont icon-gouwuchekong"></view>
+        <text>购物车</text>
+    </view>
+    <view class="cat">加入购物车</view>
+    <view class="order">立即购买</view>
+</view>
